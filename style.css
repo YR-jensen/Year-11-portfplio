@@ -1,27 +1,80 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
-    overflow: hidden;
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 25px;  /* Adjusted padding for better spacing */
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  display: inline-block;  /* Ensures proper spacing and alignment */
+}
+
+/* Hover effect for the links */
+.topnav a:hover {
+  background-color: #e44545;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 5px;
+  transform: scale(1.05);  /* Subtle zoom effect on hover */
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ffe432;
+  color: #333;
+}
+
+/* Style the body with a linear gradient background */
+body {
+  background: linear-gradient(to right, #99cfff, #def7ff); /* Gradient from blue to cyan */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;  /* Ensure the body takes up at least the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Optional: Add some spacing to the body content */
+body > * {
+  margin-top: 10px;
+}
+
+/* Page section styling */
+.section {
+  padding: 40px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add responsiveness for smaller screen sizes */
+@media (max-width: 768px) {
+  /* Adjust topnav layout on smaller screens */
+  .topnav {
+    padding: 0 10px;
+    height: 50px;
   }
-  
-  /* Style the links inside the navigation bar */
+
   .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
+    padding: 12px 20px;
   }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #e44545;
-    color: rgb(20, 150, 193);
+
+  /* Make the logo smaller on mobile devices */
+  .topnav .logo {
+    height: 30px;
   }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #c182b0;
-    color: rgb(246, 246, 246);
-  }
+}
