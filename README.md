@@ -1,2 +1,25 @@
-# Year-11-portfplio
-[portfolio here](https://yr-jensen.github.io/Year-11-portfplio/)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jensen Y11 Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="**news.html">News</a>
+        <a class="active" hre**f="Project1.html">Project One</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+
+    <h1>Low Poly Character</h1>
+    <p>1. Between 12 and 35 years old, like minimalist art style, retro game aesthetics or simplified graphic design
+        2. Simple, easily recognizable appearance and features. Outline is very important. Players need to be able to recognize the character at a glance
+        3. Design in line with the cultural trends, genres or preferences of the target player group</p>
+    
+</body>
+</html>
